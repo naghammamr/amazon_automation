@@ -19,7 +19,7 @@ public class BaseTests {
         driver.navigate().to("https://www.amazon.com/");
     }
 
-    @AfterSuite(enabled = false)
+    @AfterSuite(enabled = true)
     public void closeDriver()
     {
         driver.quit();
