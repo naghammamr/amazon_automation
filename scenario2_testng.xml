@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="product purchase suite">
+    <test name="Product Purchase Test" preserve-order="true">
+        <classes>
+
+            <class name="tests.HomeTest" />
+            <methods>
+                <include name="userCanClickOnTodayDealsLink" />
+            </methods>
+
+            <class name="tests.TodayDealsTest" />
+            <methods>
+                <include name="userCanFilterDeals" />
+                <include name="userCanNavigateToFourthPage"/>
+                <include name="userCanClickItemLink"/>
+            </methods>
+
+            <class name="tests.ItemTest" />
+            <methods>
+                <include name="userCanAddItemToCart" />
+            </methods>
+
+        </classes>
+    </test>
+</suite>
