@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [product purchase suite]">
+  <test thread-count="5" name="Deals Purchase(failed)">
+    <classes>
+      <class name="tests.TodayDealsTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="openBrowser"/>
+          <include name="userCanNavigateToFourthPage"/>
+        </methods>
+      </class> <!-- tests.TodayDealsTest -->
+      <class name="tests.ItemTest">
+        <methods>
+          <include name="userCanAddItemToCart"/>
+          <include name="closeDriver"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.ItemTest -->
+    </classes>
+  </test> <!-- Deals Purchase(failed) -->
+</suite> <!-- Failed suite [product purchase suite] -->

@@ -22,6 +22,12 @@ public class TodayDealPage extends PageBase {
     @FindBy(xpath = "//li//a[contains(.,'Next')]")
     WebElement nextBtn;
 
+    @FindBy(xpath = "//li//a[contains(.,3)]")
+    WebElement thirdPageBtn;
+
+    @FindBy(xpath = "//li//a[contains(.,4)]")
+    WebElement fourthPageBtn;
+
     //  @FindBy(xpath = "//div[@data-deal-id='baacfb90']//a")
     @FindBy(xpath = "//div[@class='DealContent-module__truncate_sWbxETx42ZPStTc9jwySW']")
     WebElement itemLink;
@@ -41,6 +47,13 @@ public class TodayDealPage extends PageBase {
 
     public void navigateToNextPage() {
         nextBtn.click();
+    }
+
+    public void navigateToFourthPage()
+    {
+        thirdPageBtn.click();
+        //scrollToBottom();
+        fourthPageBtn.click();
     }
 
     public void clickItemLink() {
